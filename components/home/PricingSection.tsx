@@ -1,4 +1,3 @@
-import Link from 'next/link'
 import Image from 'next/image'
 import { Check, Sparkles, Star } from 'lucide-react'
 import Reveal from '@/components/Reveal'
@@ -68,15 +67,6 @@ export default function PricingSection() {
                   </li>
                 ))}
               </ul>
-
-              {/* CTA */}
-              <Link
-                href="/pricing"
-                className={plan.highlight ? 'btn-primary' : 'btn-outline'}
-                style={{ justifyContent: 'center', width: '100%', marginTop: '1.5rem', borderRadius: '9999px' }}
-              >
-                자세히 보기
-              </Link>
             </div>
           ))}
         </Reveal>
