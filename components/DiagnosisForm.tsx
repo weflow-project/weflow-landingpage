@@ -8,8 +8,8 @@ import { projectTypes } from '@/data/common'
  * - /diagnosis 페이지, 홈 우측 고정 폼 등에서 공용으로 사용
  * - compact: 우측 고정 패널처럼 좁은 공간용으로 여백/글씨를 줄임
  */
-// 예시용 데모 — 문의 내역 DB 저장 중단 (제출 버튼 비활성화, 재개하려면 false 로)
-const SUBMIT_DISABLED = true
+// 문의 접수 사용 중 — 막으려면 true 로
+const SUBMIT_DISABLED = false
 
 export default function DiagnosisForm({ compact = false }: { compact?: boolean }) {
   const [form, setForm] = useState({ name: '', phone: '', type: '', industry: '', note: '', agree: false })

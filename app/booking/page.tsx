@@ -14,8 +14,8 @@ function getDaysInMonth(y: number, m: number) { return new Date(y, m + 1, 0).get
 function getFirstDay(y: number, m: number) { return new Date(y, m, 1).getDay() }
 function pad(n: number) { return String(n).padStart(2, '0') }
 
-// 예시용 데모 — 예약 내역 DB 저장 중단 (제출 버튼 비활성화, 재개하려면 false 로)
-const SUBMIT_DISABLED = true
+// 예약 접수 사용 중 — 막으려면 true 로
+const SUBMIT_DISABLED = false
 
 export default function BookingPage() {
   const today = new Date()
